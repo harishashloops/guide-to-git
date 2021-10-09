@@ -1,188 +1,345 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
+      crossorigin="anonymous"
+    />
 
     <title>Guide to git!</title>
   </head>
   <body>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+      crossorigin="anonymous"
+    ></script>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Guide to Git</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Repositories</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Functions
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Pull</a></li>
-                  <li><a class="dropdown-item" href="#">Push</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">clone</a></li>
-                  <li><a class="dropdown-item" href="#">merge</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Guide to Git</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Repositories</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Troubleshoot
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Pull</a></li>
+                <li><a class="dropdown-item" href="#">Push</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">clone</a></li>
+                <li><a class="dropdown-item" href="#">merge</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
         </div>
-      </nav>
-    
+      </div>
+    </nav>
+
     <h1>Welcome to the Guide to Git</h1>
     <div>
-        <p>in this tutorial we will learn how to use Version control system</p>
-        <p>in this technology era when multiple users are working on a same project to deliver the best possible result in the shortest span of time version control system is an excellent option.</p>
-        <p>A version control system allow's its user to access and edit the same piece of code simultaneously while keeping the log of all the file that are being edited</p>
+      <p>in this tutorial we will learn how to use Version control system</p>
+      <p>
+        in this technology era when multiple users are working on a same project
+        to deliver the best possible result in the shortest span of time version
+        control system is an excellent option.
+      </p>
+      <p>
+        A version control system allow's its user to access and edit the same
+        piece of code simultaneously while keeping the log of all the file that
+        are being edited
+      </p>
     </div>
     <h2>lets dive into the Git and understand how it works!</h2>
 
     <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                step 1 :installing git into your system!
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-                <p>go to the git <a href="https://git-scm.com/"> website</a></p>
-                <p>find your operating system and click download</p>
-                <img src="./images/1.png" alt="download page"/>
-               
-            </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            step 1 :installing git into your system!
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse show"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <p>go to the git <a href="https://git-scm.com/"> website</a></p>
+            <p>find your operating system and click download</p>
+            <img src="./images/1.png" alt="download page" />
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                step 2 :Creating your github account
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-                <p>go to the Github <a href="https://github.com/"> website and click on sign in</a></p>
-                <p>Add your Email, Password and Register yourself</p>
-                <img src="./images/2.png" alt="download page"/>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              step 3 :Creating Repository
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-                <ul>
-                    <li>
-                        <p>click on new</p>
-                        <img src="./images/3.png" alt="new repo page"/>
-                    </li>
-                    <li>
-                        <p>Add name of the Repository, description and visibility and scroll down and click on Create</p>
-                        <img src="./images/4.png" alt="new repo page"/>
-                    </li>
-                    <li>
-                        <p>An empty project will be created and a url will be provided to access your Repository</p>
-                        <img src="./images/5.png" alt="new repo page"/>
-                    </li>
-                </ul>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                step 4 :Cloning Repository
-              </button>
-            </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                  <ul>
-                      <li>
-                          <p>copy the URL</p>
-                          <img src="./images/5.png" alt="clone page"/>
-                      </li>
-                      <li>
-                          <p>Open command Prompt in the drive you want to clone the project and write the following command along with the URL, press enter</p>
-                          <img src="./images/6.png" alt="clone page"/>
-                      </li>
-                      <li>
-                          <p>Repository will be cloned into your drive</p>
-                          <img src="./images/7.png" alt="clone page"/>
-                      </li>
-                  </ul>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFive">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                step 5 :Changing in the files
-              </button>
-            </h2>
-            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                  <ul>
-                      <li>
-                          <p>Open VS code by typing "code ." in the cmd while being in the cloned folder</p>
-                          <img src="./images/8.png" alt="changing page"/>
-                      </li>
-                      <li>
-                          <p>Your project will be opened in the vs code now you can create edit or delete any file as you like.</p>
-                          <img src="./images/9.png" alt="changing page"/>
-                      </li>
-                  </ul>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingSix">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                step 5 :Pushing to Git
-              </button>
-            </h2>
-            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                  <ul>
-                      <li>
-                          <p>Now that you have edited your files, you can see the git icon with a badge indicating that you have some uncommited changes in your project</p>
-                          <img src="./images/10.png" alt="changing page"/>
-                      </li>
-                      <li>
-                          <p>To commit your changes you have to perform the following steps, open Command Prompt and type "git status",It will tell you about all the files that have been modified and not commited </p>
-                          <img src="./images/11.png" alt="changing page"/>
-                      </li>
-                      <li>
-                        <p>To commit these files you have to first stage them to be commit type "git add ." to stage all the files</p>
-                        <img src="./images/12.png" alt="changing page"/>
-                    </li>
-                  </ul>
-              </div>
-            </div>
-          </div>
       </div>
-    
-
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            step 2 :Creating your github account
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <p>
+              go to the Github
+              <a href="https://github.com/"> website and click on sign in</a>
+            </p>
+            <p>Add your Email, Password and Register yourself</p>
+            <img src="./images/2.png" alt="download page" />
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            step 3 :Creating Repository
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <ul>
+              <li>
+                <p>click on new</p>
+                <img src="./images/3.png" alt="new repo page" />
+              </li>
+              <li>
+                <p>
+                  Add name of the Repository, description and visibility and
+                  scroll down and click on Create
+                </p>
+                <img src="./images/4.png" alt="new repo page" />
+              </li>
+              <li>
+                <p>
+                  An empty project will be created and a url will be provided to
+                  access your Repository
+                </p>
+                <img src="./images/5.png" alt="new repo page" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseFour"
+            aria-expanded="false"
+            aria-controls="collapseFour"
+          >
+            step 4 :Cloning Repository
+          </button>
+        </h2>
+        <div
+          id="collapseFour"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingFour"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <ul>
+              <li>
+                <p>copy the URL</p>
+                <img src="./images/5.png" alt="clone page" />
+              </li>
+              <li>
+                <p>
+                  Open command Prompt in the drive you want to clone the project
+                  and write the following command along with the URL, press
+                  enter
+                </p>
+                <img src="./images/6.png" alt="clone page" />
+              </li>
+              <li>
+                <p>Repository will be cloned into your drive</p>
+                <img src="./images/7.png" alt="clone page" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseFive"
+            aria-expanded="false"
+            aria-controls="collapseFive"
+          >
+            step 5 :Changing in the files
+          </button>
+        </h2>
+        <div
+          id="collapseFive"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingFive"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <ul>
+              <li>
+                <p>
+                  Open VS code by typing "code ." in the cmd while being in the
+                  cloned folder
+                </p>
+                <img src="./images/8.png" alt="changing page" />
+              </li>
+              <li>
+                <p>
+                  Your project will be opened in the vs code now you can create
+                  edit or delete any file as you like.
+                </p>
+                <img src="./images/9.png" alt="changing page" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseSix"
+            aria-expanded="false"
+            aria-controls="collapseSix"
+          >
+            step 5 :Pushing to Git
+          </button>
+        </h2>
+        <div
+          id="collapseSix"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingSix"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <ul>
+              <li>
+                <p>
+                  Now that you have edited your files, you can see the git icon
+                  with a badge indicating that you have some uncommited changes
+                  in your project
+                </p>
+                <img src="./images/10.png" alt="changing page" />
+              </li>
+              <li>
+                <p>
+                  To commit your changes you have to perform the following
+                  steps, open Command Prompt and type "git status",you can see
+                  the file that have been edited are marked red
+                </p>
+                <img src="./images/11.png" alt="changing page" />
+              </li>
+              <li>
+                <p>
+                  To commit these files you have to first stage them to be
+                  commited type "git add ." to stage all the files , now check
+                  the status
+                </p>
+                <img src="./images/12.png" alt="changing page" />
+              </li>
+              <li>
+                <p>
+                  Now that you hae staged the files it's time to commit the
+                  changes type "git commit -m "your message" "
+                </p>
+                <img src="./images/13.png" alt="changing page" />
+              </li>
+              <li>
+                <p>
+                  now your code has been commited and ready to be pushed type
+                  "git push"
+                </p>
+                <img src="./images/14.png" alt="changing page" />
+              </li>
+              <li>
+                <p>Your code have been pushed and available online</p>
+                <img src="./images/15.png" alt="changing page" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
